@@ -31,7 +31,7 @@ def signup(request):
             user.last_name = last_name;
             user.first_name =first_name;
             user.save()
-            return render(request, "login.html");
+            return render(request, "account_created.html");
         except:
             return render(request,"account_exists.html");
     return render(request, "error_page.html")
