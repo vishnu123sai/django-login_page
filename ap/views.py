@@ -6,7 +6,7 @@ from django.contrib.auth import authenticate, login
 # Create your views here.
 def index(request):
     return render(request,"login.html" );
-def email(request):
+def login(request):
     if request.method == "POST":
         email = request.POST['email'];
         pwd = request.POST['password'];
